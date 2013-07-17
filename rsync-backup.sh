@@ -10,17 +10,17 @@ Backupdate="`date '+%Y%m%d.%H%M'`"
 
 #Define rmt location
 RmtUser=root
-RmtHost=203.207.99.196
+RmtHost=x.x.x.x
 RmtPath=/home/backup/
 BackupSource="${RmtUser}@${RmtHost}:${RmtPath}"
 #BackupSource="/home/"
 
 #Define location of backup
-BackupRoot="/home/chehaojia/Backups/$RmtHost/"
+BackupRoot="/home/Backups/$RmtHost/"
 #BackupRoot="/home/Backups/localhost/"
 
 LogFile="${BackupRoot}backup.log"
-ExcludeList="/home/chehaojia/Backups/backup-exclude-list.txt"
+ExcludeList="/home/Backups/backup-exclude-list.txt"
 
 BackupName="${RmtHost}-backup"
 BackupNum="7"
